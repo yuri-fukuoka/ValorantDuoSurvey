@@ -10,9 +10,9 @@
         <p id="description">A little survey for information gathering and finding your duo partner</p>
         <form id="survey-form">
             <fieldset class="info">
-                <label for="name-label">Riot ID: <input id="name-label" type="text" placeholder="What's your id?" required></label>
-                <label for="email-label">E-mail: <input id="email-label" type="email" placeholder="mail@whatever.com" required></label>
-                <label for="number-label">What's your age: <input id="number-label" type="number" min="10" max="100" placeholder="Age" required></label>
+                <label id= "name-label" for="name">Riot ID: <input id="name" type="text" placeholder="What's your id?" required></label>
+                <label id= "email-label" for="email">E-mail: <input id="email" type="email" placeholder="mail@whatever.com" required></label>
+                <label id= "number-label" for="number">What's your age: <input id="number" type="number" min="10" max="100" placeholder="Age" required></label>
             </fieldset>
             <fieldset>
                 <p>What's your elo: </p>
@@ -45,11 +45,11 @@
                     <option value="25">Radiant</option>
                 </select>
                 <p>Which role do you prefer: </p>
-                <label for="role-flex"><input id="role-flex" type="radio" name="role-select" checked> Flex</label>
-                <label for="role-duelist"><input id="role-duelist" type="radio" name="role-select"> Duelist</label>
-                <label for="role-initiator"><input id="role-initiator" type="radio" name="role-select"> Initiator</label>
-                <label for="role-controller"><input id="role-controller" type="radio" name="role-select"> Controller</label>
-                <label for="role-sentinel"><input id="role-sentinel" type="radio" name="role-select"> Sentinel</label>
+                <label for="role-flex"><input id="role-flex" type="radio" name="role-select" value="role" checked> Flex</label>
+                <label for="role-duelist"><input id="role-duelist" type="radio" name="role-select" value="role"> Duelist</label>
+                <label for="role-initiator"><input id="role-initiator" type="radio" name="role-select" value="role"> Initiator</label>
+                <label for="role-controller"><input id="role-controller" type="radio" name="role-select" value="role"> Controller</label>
+                <label for="role-sentinel"><input id="role-sentinel" type="radio" name="role-select" value="role"> Sentinel</label>
             </fieldset>
             <p>Which agents you like to play: </p>
             <fieldset class="agentlist-container">
@@ -96,7 +96,7 @@
             <label class="textinfo" for="bio"> Tell more about you:
                 <textarea id="bio" class="textinfo" cols="50" placeholder="Tell us your story..."></textarea>
             </label>
-            <input type="submit" value="Submit">
+            <input id="submit" type="submit" value="Submit">
         </form>
     </body>
     <footer>
