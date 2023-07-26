@@ -1,3 +1,89 @@
-head {
-    font-size: 30px;
+body {
+    width: 80%;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-image:url(darktheme.png);
+    color: #FD4556;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace
 }
+
+.info, .textinfo{
+    font-weight: bold;
+}
+
+p {
+    font-weight: bold;
+}
+
+fieldset {
+    border: 0;
+}
+
+.agentlist-container {
+    display: flex;    
+}
+
+.agentlist-column {
+    flex: 1;
+    padding: 1em;
+    border: 0;
+    text-align: left;
+}
+
+.agentlist-column p {
+    font-weight: bold;
+}
+
+.agentlist-duelist label,
+.agentlist-initiator label,
+.agentlist-controller label,
+.agentlist-sentinel label {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.agentlist-duelist input[type="checkbox"],
+.agentlist-initiator input[type="checkbox"],
+.agentlist-controller input[type="checkbox"],
+.agentlist-sentinel input[type="checkbox"] {
+    margin-right: 15px;
+    vertical-align: middle;
+}
+
+input, textarea, select{
+    background-color: #d3d3d3;
+    border: 1px solid #0a0a23;
+    color: black;
+    margin: 10px 0 0 0;
+}
+
+.textinfo {
+    margin-top: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+textarea {
+    width: 25%;
+    min-height: 4em;
+}
+
+
+input[type="submit"] {
+    font-weight: bold;
+    display: block;
+    width: 15%;
+    height: 2cm;
+    margin: 1em auto;
+    font-size: 20px;
+    background-color:#FD4556
+}
+
+footer {
+    margin-top: 100px;
+    text-align: center;
+}
+
