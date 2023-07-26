@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+    <link rel="stylesheet" href="styles.css">
+    <head>
+        <h1 id="title">Search for your duo, a service by: Yuri Fukuoka</h1>
+        <p id="description">A little survey for information gathering and finding your duo partner</p>
+    </head>
+    <body>
+        <form id="survey-form">
+            <fieldset>
+                <label for="name-label">Riot ID: <input id="name-label" type="text" placeholder="What's your id?"></label>
+                <label for="email-label">E-mail: <input id="email-label" type="email" placeholder="mail@whatever.com"></label>
+                <label for="number-label">What's your age: <input id="number-label" type="number" min="10" max="100" placeholder="Age"></label>
+            </fieldset>
+            <fieldset>
+                <p>What's your elo: </p>
+                <select id="dropdown">
+                    <option value="" disabled selected>Select your elo</option>
+                    <option value="1">Iron 1</option>
+                    <option value="2">Iron 2</option>
+                    <option value="3">Iron 3</option>
+                    <option value="4">Bronze 1</option>
+                    <option value="5">Bronze 2</option>
+                    <option value="6">Bronze 3</option>
+                    <option value="7">Silver 1</option>
+                    <option value="8">Silver 2</option>
+                    <option value="9">Silver 3</option>
+                    <option value="10">Gold 1</option>
+                    <option value="11">Gold 2</option>
+                    <option value="12">Gold 3</option>
+                    <option value="13">Platinum 1</option>
+                    <option value="14">Platinum 2</option>
+                    <option value="15">Platinum 3</option>
+                    <option value="16">Diamond 1</option>
+                    <option value="17">Diamond 2</option>
+                    <option value="18">Diamond 3</option>
+                    <option value="19">Ascendant 1</option>
+                    <option value="20">Ascendant 1</option>
+                    <option value="21">Ascendant 1</option>
+                    <option value="22">Imortal 1</option>
+                    <option value="23">Imortal 1</option>
+                    <option value="24">Imortal 1</option>
+                    <option value="25">Radiant</option>
+                </select>
+                <p>Which role do you prefer: </p>
+                <label for="role-duelist"><input id="role-duelist" type="radio" name="role-select"> Duelist</label>
+                <label for="role-initiator"><input id="role-initiator" type="radio" name="role-select"> Initiator</label>
+                <label for="role-controller"><input id="role-controller" type="radio" name="role-select"> Controller</label>
+                <label for="role-sentinel"><input id="role-sentinel" type="radio" name="role-select"> Sentinel</label>
+                <p>Which agents you like to play: </p>
+                <div class="agentlist-duelist">
+                    <p>Duelist</p>
+                    <label><input type="checkbox" value="checkbox-jett"> Jett</label>  
+                    <label><input type="checkbox" value="checkbox-raze"> Raze</label>  
+                    <label><input type="checkbox" value="checkbox-reyna"> Reyna</label>  
+                    <label><input type="checkbox" value="checkbox-yoru"> Yoru</label>  
+                    <label><input type="checkbox" value="checkbox-phoenix"> Phoenix</label>
+                    <label><input type="checkbox" value="checkbox-neon"> Neon</label>
+                </div>
+                <div class="agentlist-initiator"> 
+                    <p>Initiator</p>
+                    <label><input type="checkbox" value="checkbox-sova"> Sova</label>
+                    <label><input type="checkbox" value="checkbox-skye"> Skye</label>
+                    <label><input type="checkbox" value="checkbox-fade"> Fade</label>
+                    <label><input type="checkbox" value="checkbox-kayo"> KAY-O</label>
+                    <label><input type="checkbox" value="checkbox-breach"> Breach</label>
+                </div>
+                <div class="agentlist-controller">
+                    <p>Controller</p>
+                    <label><input type="checkbox" value="checkbox-brimstone"> Brimstone</label>
+                    <label><input type="checkbox" value="checkbox-viper"> Viper</label>
+                    <label><input type="checkbox" value="checkbox-astra"> Astra</label>
+                    <label><input type="checkbox" value="checkbox-harbor"> Harbor</label>
+                </div>
+                <div class="agentlist-sentinel">
+                    <p> Sentinel</p>
+                    <label><input type="checkbox" value="checkbox-killjoy"> Killjoy</label>
+                    <label><input type="checkbox" value="checkbox-cypher"> Cypher</label>
+                    <label><input type="checkbox" value="checkbox-chamber"> Chamber</label>
+                    <label><input type="checkbox" value="checkbox-deadlock"> Deadlock</label>
+                </div>
+                <label for="bio"> Tell more about you:
+                    <textarea id="bio" placeholder="Tell us your story..."></textarea>
+                </label>
+            </fieldset>
+            <input type="submit" value="Submit">
+        </form>
+    </body>
+</html>
